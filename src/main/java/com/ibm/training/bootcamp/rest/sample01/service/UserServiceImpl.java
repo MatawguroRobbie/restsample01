@@ -2,13 +2,11 @@ package com.ibm.training.bootcamp.rest.sample01.service;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
-
 import org.apache.commons.lang3.StringUtils;
 
 import com.ibm.training.bootcamp.rest.sample01.dao.UserDao;
 import com.ibm.training.bootcamp.rest.sample01.dao.UserHashMapDaoImpl;
+import com.ibm.training.bootcamp.rest.sample01.dao.UserJdbcDaoImpl;
 import com.ibm.training.bootcamp.rest.sample01.domain.User;
 
 public class UserServiceImpl implements UserService{
@@ -16,7 +14,8 @@ public class UserServiceImpl implements UserService{
 	UserDao userDao;
 
 	public UserServiceImpl() {
-		this.userDao = UserHashMapDaoImpl.getInstance();
+		this.userDao = UserJdbcDaoImpl.getInstance();
+		//this.userDao = UserHashMapDaoImpl.getInstance();
 	}
 	
 	@Override

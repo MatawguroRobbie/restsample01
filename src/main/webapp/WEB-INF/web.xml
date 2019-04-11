@@ -25,7 +25,7 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>Jersey Service </servlet-name>
+		<servlet-name>Jersey Service</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
 </web-app>

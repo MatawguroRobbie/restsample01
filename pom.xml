@@ -38,6 +38,12 @@
 			<version>2.27</version>
 		</dependency>
 
+		<!-- HSQLDB -->
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.4.1</version>
+		</dependency>
 
 		<!-- JAXB -->
 		<dependency>
@@ -73,7 +79,7 @@
 		<finalName>restsample01</finalName>
 	</build>
 	<properties>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
 	</properties>
 </project>

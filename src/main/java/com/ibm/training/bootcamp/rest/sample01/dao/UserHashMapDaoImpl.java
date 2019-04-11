@@ -6,13 +6,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import javax.inject.Singleton;
-
 import org.apache.commons.lang3.StringUtils;
 
 import com.ibm.training.bootcamp.rest.sample01.domain.User;
 
-@Singleton
 public class UserHashMapDaoImpl implements UserDao {
 
 	static private UserHashMapDaoImpl INSTANCE;
@@ -62,6 +59,18 @@ public class UserHashMapDaoImpl implements UserDao {
 				.filter(user -> StringUtils.isBlank(firstName) || user.getFirstName().equalsIgnoreCase(firstName))
 				.filter(user -> StringUtils.isBlank(lastName) || user.getLastName().equalsIgnoreCase(lastName))
 				.collect(Collectors.toList());
+		
+//		List<User> users = new ArrayList<>(USER_STORE.values());
+//
+//		List<User> results = new ArrayList<>();
+//		for (User user : users) {
+//			if ( (StringUtils.isBlank(firstName) || user.getFirstName().equalsIgnoreCase(firstName)) 
+//					&& (StringUtils.isBlank(lastName) || user.getLastName().equalsIgnoreCase(lastName))) {
+//				results.add(user);
+//			}
+//		}
+		
+		//return results;
 		return users;
 	}
 

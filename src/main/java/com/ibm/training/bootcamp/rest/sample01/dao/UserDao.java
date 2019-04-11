@@ -1,8 +1,6 @@
 package com.ibm.training.bootcamp.rest.sample01.dao;
 
 import java.util.List;
-import java.util.Optional;
-
 import com.ibm.training.bootcamp.rest.sample01.domain.User;
 
 public interface UserDao {
